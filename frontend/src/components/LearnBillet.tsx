@@ -3,7 +3,7 @@ import "./LearnBillet.css"
 
 function LearnBillet() {
   return (
-    <div className="container-fluid learnBillet ">
+    <div className="container-fluid learnBillet " data-aos="fade-down" data-aos-delay="300">
       <div className="row">
             <div className="col-12 col-md-6">
                 <div className="position-relative">

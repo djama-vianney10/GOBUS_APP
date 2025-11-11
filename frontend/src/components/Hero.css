@@ -29,9 +29,9 @@
 
 .hero{
     background-image: url("/images/back1.webp");
-    background-size: cover;        /* L’image couvre toute la section */
-    background-position: center;   /* Centrée */
-    background-repeat: no-repeat;  /* Pas de répétition */
+    background-size: cover;        
+    background-position: center;  
+    background-repeat: no-repeat; 
     height: 280vh; 
     width: 100%;
     padding-top: 100px;
