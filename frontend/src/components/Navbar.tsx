@@ -34,7 +34,7 @@ function Navbar() {
       <span className="navbar-toggler-icon"></span> 
     </button> 
     <div className="collapse navbar-collapse" id="navbarSupportedContent"> 
-      <ul className="navbar-nav mb-2 ms-auto mb-lg-0 px-3"> 
+      <ul className="navbar-nav mb-2 me-auto mb-lg-0 px-3"> 
         {liensAffiches.map((lien, index) => ( 
         <li key={index} className="nav-item"> 
           <Link className={`nav-link other-link ${location.pathname === lien.path ? "active" : ""}`} to={lien.path}>{lien.nom}</Link> 
