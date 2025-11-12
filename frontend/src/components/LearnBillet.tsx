@@ -3,37 +3,19 @@ import "./LearnBillet.css"
 
 function LearnBillet() {
   return (
-    <div className="container-fluid learnBillet " data-aos="fade-down" data-aos-delay="300">
-      <div className="row">
+    <div className="container-fluid learnBillet py-5" data-aos="fade-down" data-aos-delay="300">
+      <div className="row py-5">
             <div className="col-12 col-md-6">
-                <div className="position-relative">
-                     <img 
-                     src="/images/bg.webp" 
-                    alt="Background" 
-                    className="img-fluid" 
-                    style={{
-                        position: 'relative',
-                        zIndex: 1,
-                        width: '100%',
-                        maxWidth: '150%' }}
-                    />
+                <div className="imageBillet">
                     <img 
-                    src="/images/p1.webp" 
+                    src="/images/hommeheureux.png" 
                     alt="Réserver billet" 
-                    className="img-fluid" 
-                    style={{ 
-                    position: 'absolute', 
-                    top: '30%', 
-                    left: '50%', 
-                    transform: 'translate(-30%, -30%)',
-                    zIndex: 2,
-                    maxWidth: '80%'
-                    }}
+                    className="img-fluid h-100 w-100" 
                     />
                 </div>
             </div>
 
-            <div className="col-12 col-md-6 mt-6">
+            <div className="col-12 col-md-6">
                 <div className="method-billet">
                     <h1 className="text-secondary h5">Simple et rapide</h1>
                     <h3 className="fw-bold mb-5">Reservez votre billet en 3 étapes</h3>

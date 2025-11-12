@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import Navbar from "../components/Navbar"
+import ReserverBillet from "../components/ReserverBillet"
+import Footer from "../components/Footer"
 
 function Bus() {
 
@@ -22,7 +24,11 @@ function Bus() {
         </div>
 
     ):(
-        <Navbar />
+        <div>
+          <Navbar />
+          <ReserverBillet />
+          <Footer />
+        </div>
     )}
     </>
   )

@@ -30,7 +30,7 @@
 
 .method-billet{
     margin-left: 60px;
-    margin-top: 100px;
+    margin-top: 400px;
 }
 
 .methodPara{
@@ -39,7 +39,7 @@
 }
 
 .method-icon1{
-    width: 50px;
+    width: 60px;
     height: 50px;
     background: var(--bs-red); /* vert translucide */
     border-radius: 50%;
@@ -78,4 +78,40 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+.imageBillet{
+    margin-top: 300px;
+}
+
+.learnBillet{
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 960px){
+
+    .learnBillet{
+    margin-top: 1000px;
+    }
+    .method-billet{
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+
+    .imageBillet{
+        margin-top: 600px;
+    }
+
+    .method-icon1{
+        width: 100px;
+    }
+
+    .method-icon2{
+        width: 180px;
+    }
+
+    .method-icon3{
+        width: 180px;
+    }
 }

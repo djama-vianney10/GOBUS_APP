@@ -6,6 +6,8 @@ import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos"
 import Bus from "./pages/Bus";
+import PageNotFound from "./pages/PageNotFound";
+import Conseil from "./pages/Conseil";
 
 function App() {
 
@@ -24,6 +26,10 @@ function App() {
 
       <Route path="/" element={<Home />}/>
       <Route path="/reserver" element={<Bus />}/>
+      <Route path="/conseil" element={<Conseil />}/>
+
+
+      <Route path="/*" element={<PageNotFound />}/>
 
     </Routes>
     </BrowserRouter>

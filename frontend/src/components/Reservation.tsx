@@ -1,7 +1,6 @@
-
+import "./RerserverBillet.css"
 
 function Reservation() {
-
 
   return (
     <div>

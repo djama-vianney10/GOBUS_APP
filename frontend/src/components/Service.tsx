@@ -3,13 +3,13 @@ import "./Service.css"
 function Service() {
 
   return (
-    <div className="service container py-5 mt-5">
+    <div className="service container mt-5">
       <div className="row">
         <div className="mb-5">
             <p className="service-Why h5">Pourquoi nous choisir ?</p>
             <h3 className="fw-bold">Services de qualité offert</h3>
         </div>
-         <div className="col-12 col-md-4">
+         <div className="col-12 col-md-4 mb-4">
             <div className="card shadow h-100">
                 <div className="card-body d-block mx-auto text-center">
                     <div className="mb-3" style={{ height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -26,7 +26,7 @@ function Service() {
             </div>
         </div>
 
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-md-4 mb-4">
             <div className="card shadow h-100">
                 <div className="card-body d-block mx-auto text-center">
                     <div className="mb-3" style={{ height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -38,7 +38,7 @@ function Service() {
             </div>
         </div>
 
-        <div className="col-12 col-md-4">
+        <div className="col-12 col-md-4 mb-4">
             <div className="card shadow h-100">
                 <div className="card-body d-block mx-auto text-center">
                     <div className="mb-3" style={{ height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

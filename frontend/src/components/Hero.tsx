@@ -1,6 +1,5 @@
 import Formsearch from "./Formsearch"
 import "./Hero.css"
-import LearnBillet from "./LearnBillet"
 import Service from "./Service"
 
 function Hero() {
@@ -19,11 +18,10 @@ function Hero() {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 h-100 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="300" style={{ position: "relative", zIndex: 1 }}>
-                        <img src="/images/object.webp" alt="" className="img-fluid w-100 h-100" style={{ objectFit: "cover" }} />
+                        <img src="/images/aff1.webp" alt="" className="img-fluid w-100 h-100" style={{ objectFit: "cover" }} />
                     </div>
                 </div>
                 <Service />
-                <LearnBillet />
             </div>
         </div>
     )
