@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar"
 import ReserverBillet from "../components/ReserverBillet"
 import Footer from "../components/Footer"
 
-function Bus() {
+function Ticket() {
 
     const [load, setLoad] = useState(true)
 
@@ -34,4 +34,4 @@ function Bus() {
   )
 }
 
-export default Bus
+export default Ticket

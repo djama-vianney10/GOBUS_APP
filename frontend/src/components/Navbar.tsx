@@ -1,27 +1,10 @@
-import { useState } from "react" 
 import "./Navbar.css" 
-import type { LienProps } from "../types" 
-import { Link, useLocation } from "react-router-dom" 
-import Tilt from "react-parallax-tilt";
+import { Link} from "react-router-dom" 
  
 function Navbar() { 
- 
-    const location = useLocation() 
- 
-    const [liensNav, setLienNav] = useState<LienProps[]>([ 
-        { nom: "Accueil", path: "/", visible: true }, 
-        { nom: "Réserver", path: "/reserver", visible: true }, 
-        { nom: "Agences", path: "/agences", visible: true }, 
-    ]) 
- 
-    const liensAffiches = liensNav.filter(lien => { 
-        if (location.pathname === "/agences" && lien.nom === "Agences"){ 
-            return false 
-        } 
- 
-        return lien.visible 
-    }) 
- 
+
+  const user = JSON.parse(localStorage.getItem("User") || "null");
+
   return ( 
     <div> 
       <nav className="navbar navbar-expand-lg navbar-light  glass-morphisme p-4 fixed-top"> 
@@ -35,38 +18,28 @@ function Navbar() {
     </button> 
     <div className="collapse navbar-collapse" id="navbarSupportedContent"> 
       <ul className="navbar-nav mb-2 me-auto mb-lg-0 px-3"> 
-        {liensAffiches.map((lien, index) => ( 
-        <li key={index} className="nav-item"> 
-          <Link className={`nav-link other-link ${location.pathname === lien.path ? "active" : ""}`} to={lien.path}>{lien.nom}</Link> 
-        </li> 
-        ))} 
+        <li className="nav-item">
+          <Link className="nav-link other-link" to={"/"}>Acceuil</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link other-link" to={"/ticket"}>Tickets</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link other-link" to={"/partern"}>Nos partenaires</Link>
+        </li>
       </ul> 
-      <form className="d-flex" role="search"> 
-        <Tilt 
-        tiltMaxAngleX={20}
-        tiltMaxAngleY={20}
-        scale={1.1}
-        glareEnable={true}
-        glareMaxOpacity={0.4}
-        transitionSpeed={2000}
-        >
-        <button className="btn btn-outline-success fw-bold me-3" type="button">Connexion</button>
-        </Tilt>
-        <Tilt 
-        tiltMaxAngleX={20}
-        tiltMaxAngleY={20}
-        scale={1.1}
-        glareEnable={true}
-        glareMaxOpacity={0.4}
-        transitionSpeed={2000}
-        >
-        <button className="btn btn-success me-3" type="button">S'inscrire</button>
-        </Tilt>
+      <form className="d-flex">
+        {!user && (
+          <>
+          <Link to={"/loginClient"} className="bouton-navbar">Client</Link>
+          <Link to={"/loginAgence"} className="bouton-navbar">Agence</Link>
+          </>
+        )}
       </form> 
     </div> 
   </div> 
 </nav> 
-    </div> 
+  </div> 
   ) 
 } 
  

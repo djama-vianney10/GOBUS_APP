@@ -27,48 +27,60 @@
     --border-radius-1: 8px;
 }
 
-
-.Bus{
-    background-color: var(--bs-light);
-
-}
-
-.busgo {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(240, 250, 255, 0.8));
-  backdrop-filter: blur(10px);
-  position: relative;
-  z-index: 2;
-}
-
-.glass-effect {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(12px);
-  border-radius: 15px;
-  transition: all 0.4s ease-in-out;
-}
-
-.glass-effect:hover {
-  transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.busgo h2 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.busgo p {
-  font-size: 15px;
-  line-height: 1.6;
+.login{
+    margin-top: 100px;
 }
 
 
-.search{
-  background-image: url("/images/heromul.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  width: 100%;
+.register{
+    background-image: url("/images/banner-rose.webp");
+    height: 100vh;
+    width: 100%;
+}
+
+.register-container {
+  height: 100vh;
+}
+
+.register-card {
+  animation: fadeInUp 0.8s ease;
+}
+
+.input-group-text {
+  border: none;
+}
+
+.form-control, .form-select {
+  border-left: none;
+}
+
+.btn-success {
+  transition: 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #157347;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width: 962px){
+    .register-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+    }
+
+    .register-card{
+        margin-top: 100px;
+    }
+
+    .register{
+        height: 190vh;
+        width: 100%;
+    }
 }

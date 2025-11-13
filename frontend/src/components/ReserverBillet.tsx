@@ -6,6 +6,15 @@ function ReserverBillet() {
 
   return (
     <div>
+          <section className="search">
+           <div className="container">
+                <div className="row align-items-center vh-100">
+                    <div className="col-12 col-md-7">
+                        <Formsearch />
+                    </div>
+                </div>
+           </div>
+        </section>
       <section className="Bus py-5 mt-5">
             <div className="container mt-5 py-5">
             <div className="row">
@@ -81,7 +90,7 @@ function ReserverBillet() {
 
             <div className="row mt-5 py-5">
                 <h2 className="mb-4 h5 text-secondary">Voyager entre les villes de pays...</h2>
-                <p className="text-uppercase h3 mb-4">Explorez Nos villes en tendance</p>
+                <p className="text-uppercase h3 mb-4">Explorez les destination tendance</p>
                 <div
                 className="col-12 col-md-4 mb-4"
                 data-aos="fade-up"
@@ -197,16 +206,6 @@ function ReserverBillet() {
             </div>
             </div>
             </div>
-        </section>
-
-        <section className="search">
-           <div className="container">
-                <div className="row align-items-center vh-100">
-                    <div className="col-12 col-md-7">
-                        <Formsearch />
-                    </div>
-                </div>
-           </div>
         </section>
     </div>
   )
